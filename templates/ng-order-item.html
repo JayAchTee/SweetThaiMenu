@@ -1,0 +1,14 @@
+﻿<div class="col-md-2">
+	<a class="wingdings" href="#" title="A little less {{item.item}}, please!" data-id="{{item.id}}" ng-click="bumpItemDown($event)">â</a>&nbsp;{{item.selected}}&nbsp;<a class="wingdings" href="#" title="More {{item.item}}, please!" data-id="{{item.id}}" ng-click="bumpItemUp($event)">á</a>
+	<button class="btn btn-xs" ng-click="removeFromOrder($event)"><i class="glyphicon glyphicon-minus"></i> Del</button>
+</div>
+<div class="col-md-8">{{item.item}}
+	<span ng-show="item.option"> with {{item.option}}</span>
+	<span ng-show="item.ageVerify" style="color: red;">(age verification required)</span>
+</div>
+<div class="col-md-1 align-right">
+	{{item.price}}
+</div>
+<div class="col-md-1 align-right">
+	{{item.extendedPrice | currency}}
+</div>

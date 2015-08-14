@@ -1,0 +1,38 @@
+﻿<section class="order">
+	<h3>Your order ...</h3>
+	{{#if total}}
+	<table class="order-details">
+		{{#each items}}
+			<tr>
+			{{> orderItem}}
+			</tr>
+		{{/each}}
+		<tr class="row-divider">
+			<td colspan="3">Subtotal</td>
+			<td class="align-right"><b>{{formatCurrency subtotal}}</b></td>
+		</tr>
+		<tr>
+			<td colspan="3">Taxes</td>
+			<td class="align-right">{{formatCurrency tax}}</td>
+		</tr>
+		<tr>
+			<td colspan="3">Total (excluding gratuties)</td>
+			<td class="align-right"><b>{{formatCurrency total}}</b></td>
+		</tr>
+	</table>
+	{{else}}
+		<i>... is empty!</i>
+	{{/if}}
+</section>
+<div class="float-right">
+	{{#if total}}
+	<button class="donButton" data-amount="{{formatCurrency plustip15}}">Pay {{formatCurrency plustip15}}<br /> w/ 15% tip</button>
+	<span> | </span>
+	<button class="donButton" data-amount="{{formatCurrency plustip18}}">Pay {{formatCurrency plustip18}}<br /> w/ 18% tip</button>
+	<span> | </span>
+	<button class="donButton" data-amount="{{formatCurrency plustip20}}">Pay {{formatCurrency plustip20}}<br /> w/ 20% tip</button>
+	<hr />
+	<button class="donButton" data-amount="{{formatCurrency total}}">Pay {{formatCurrency total}}<br />no tip</button>
+	<button class="clrButton float-right">Forget<br />everything!</button>
+	{{/if}}
+</div>

@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta charset="utf-8" />
+		<title>Sumo Test</title>
+
+		<!-- Get jQuery and jQuery Migrate -->
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+		<!-- Get FlashEmbed in jQuery tools -->
+		<script type="text/javascript" src="scripts/lib/jQuery-flash-embed.js"></script>
+
+		<!-- Get Bootstrap styles and theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+		<!-- Get Bootstrap code -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<header class="container">
+			<nav class="navbar navbar-default navbar-fixed-top">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="sumo.html">Sweet Thai, a restaurant with Sumo Paint</a>
+					</div>
+					<div id="navbar" class="navbar-collapse collapse">
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="sumo.html">Home</a></li>
+							<li><a href="#about">About</a></li>
+							<li><a href="#contact">Contact</a></li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="index.html">A Way</a></li>
+									<li><a href="legacy.html">Legacy Way</a></li>
+									<li><a href="require.html">Require JS Way</a></li>
+									<li><a href="angular.html">Angular JS Way</a></li>
+									<li><a href="knockout.html">Knockout JS Way</a></li>
+									<li role="separator" class="divider"></li>
+									<li class="dropdown-header">Nav header</li>
+									<li><a href="sumo.html">Do Sumo Paint</a></li>
+									<li><a href="#">Separated link</a></li>
+									<li><a href="#">One more separated link</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<main class="container has-fixed-top">
+			<div class="row">
+				<div id="sumo_app"></div>
+			</div>
+		</main>
+
+		<footer>
+			<p class="text-muted">&copy; 2015 by John Halland Thompson</p>
+		</footer>
+
+		<style type="text/css" scoped="scoped">
+			footer
+			{
+				border-top: 1px solid #e7e7e7;
+				bottom: 0px;
+				height: 32px;
+				padding-left: 8px;
+				padding-right: 8px;
+				position: absolute;
+				width: 100%;
+			}
+			.webdings
+			{
+				font-family: Webdings;
+				font-size: large;
+			}
+			.wingdings
+			{
+				font-family: Wingdings;
+				font-size: large;
+			}
+			.has-fixed-top
+			{
+				padding-top: 60px;
+			}
+		</style>
+
+		<!-- My stuff a.k.a. where the wild things live -->
+		<script type="text/javascript" src="scripts/sumo-app.js"></script>
+
+		<script type="text/javascript">
+			var sumo = null;
+
+			$(document).ready(function ()
+			{
+				$("#sumo_app").css("width", "100%").css("height", $("main").height() - 8);
+
+				sumo = flashembed("sumo_app",
+					{
+						src: "http://www.sumopaint.com/flash/sumopaint.swf?version=831&target=saveToRaven.aspx",
+						width: "100%",
+						height: "100%",
+						version: [10, 0],
+						bgcolor: "#111111",
+						allowScriptAccess: "always"
+					},
+					{
+						openurl: false,
+						openhd: false,
+						cloud: false,
+						title: "I Can Haz Name",
+						service: "Save to Jo Mama's Hard Drive", 
+						target: "/SweetThaiMenu/assets/save-the-image.aspx",
+						domain: "/SweetThaiMenu/knockout.html",
+					});
+			});
+		</script>
+	</body>
+</html>

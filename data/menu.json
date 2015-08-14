@@ -1,0 +1,244 @@
+[
+	{
+		"id": 1,
+		"item": "Thai Spring Roll",
+		"price": 495,
+		"description": "Crisp vegetarian spring rolls (you get two) served with a tantalizing Thai sweet and sour sauce.",
+		"category": "Appetizers"
+	},
+	{
+		"id": 2,
+		"item": "Ka Nom Jeeb",
+		"price": 595,
+		"description": "Thai steamed dumplings (four in all) stuffed with minced pork and shrimp, and topped with toasted garlic and cilantro.",
+		"category": "Appetizers"
+	},
+	{
+		"id": 3,
+		"item": "Chicken Sa Tay",
+		"price": 695,
+		"description": "Sliced chicken breast marinated in a mixture of Thai spices and served on bamboo skewers with peanut sauce.",
+		"category": "Appetizers"
+	},
+	{
+		"id": 4,
+		"item": "Tom Ka",
+		"price": 495,
+		"description": "Chicken cooked in coconut milk with lemongrass, galangal, lime juice, cilantro, onion and mushrooms.",
+		"category": "Soups"
+	},
+	{
+		"id": 5,
+		"item": "Tom Yum Gai",
+		"price": 495,
+		"description": "Spicy chicken soup specially seasoned with lime juice, lemongrass, mushrooms, onions and cilantro.",
+		"category": "Soups"
+	},
+	{
+		"id": 6,
+		"item": "Tom Yum Goong",
+		"price": 595,
+		"description": "Spicy shrimp soup specially seasoned with lime juice, lemongrass, peppers, mushrooms, onions and cilantro.",
+		"category": "Soups"
+	},
+	{
+		"id": 7,
+		"item": "Classic Pad Thai",
+		"price": 975,
+		"description": "Choice of chicken, pork, or shrimp stir-fried with egg, rice noodles, bean sprouts, green onions and our world-famous tamarind sauce.",
+		"options": ["chicken", "pork", "shrimp" ],
+		"category": "Noodles"
+	},
+	{
+		"id": 8,
+		"item": "Pad See U",
+		"price": 975,
+		"description": "Choice of chicken, beef, or pork stir-fried broad noodes, garlic, egg, broccoli, carrots and a special sauce.",
+		"options": ["chicken", "beef", "pork" ],
+		"category": "Noodles"
+	},
+	{
+		"id": 9,
+		"item": "Pad Kee Mao",
+		"price": 975,
+		"description": "Choice of chicken, beef, or pork stir-fried broad noodes, fresh basil, garlic, bell peppers and onion.",
+		"options": ["chicken", "beef", "pork" ],
+		"category": "Noodles"
+	},
+	{
+		"id": 10,
+		"item": "Spicy Fried Rice",
+		"price": 975,
+		"description": "Choice of chicken or pork stir-fried with Thai peppers, basil, egg, red and green bell peppers and onions.",
+		"options": ["chicken", "pork" ],
+		"category": "Fried Rice"
+	},
+	{
+		"id": 11,
+		"item": "Thai Fried Rice",
+		"price": 975,
+		"description": "Choice of chicken, beef, or pork stir-fried with egg, fresh garlic, carrots, onion and tomatoes.",
+		"options": ["chicken", "beef", "pork" ],
+		"category": "Fried Rice"
+	},
+	{
+		"id": 12,
+		"item": "Pineapple Fried Rice",
+		"price": 975,
+		"description": "Choice of chicken or pork stir-fried with egg, curry powder, cashew nuts, raisins, onions, tomatoes and pineapple.",
+		"options": ["chicken", "pork" ],
+		"category": "Fried Rice"
+	},
+	{
+		"id": 13,
+		"item": "Chili Thai Fried Rice",
+		"price": 1075,
+		"description": "Choice of chicken, beef, or pork stir-fried with egg, fresh garlic, carrots, onion and tomatoes.",
+		"options": ["chicken", "beef", "pork" ],
+		"category": "Fried Rice"
+	},
+	{
+		"id": 14,
+		"item": "Spicy Garlic",
+		"price": 1075,
+		"description": "Choice of chicken, beef, or pork sauteed in a spicy garlic sauce with stir-fried vegetables on the side.",
+		"options": ["chicken", "beef", "pork" ],
+		"category": "Entrees"
+	},
+	{
+		"id": 15,
+		"item": "Cashew Nut",
+		"price": 1025,
+		"description": "Choice of chicken, beef, or pork sauteed in a roasted chili sauce with cashew nuts, onions, broccoli, bell peppers, carrots and mushrooms.",
+		"options": ["chicken", "beef", "pork" ],
+		"category": "Entrees"
+	},
+	{
+		"id": 16,
+		"item": "Spicy Basil",
+		"price": 975,
+		"description": "Choice of chicken, beef, or pork sauteed with fresh basil, chili, garlic, onion, bell peppers and a special sauce.",
+		"options": ["chicken", "beef", "pork" ],
+		"category": "Entrees"
+	},
+	{
+		"id": 17,
+		"item": "Ginger Special",
+		"price": 975,
+		"description": "Choice of chicken, beef, or pork sauteed with fresh ginger, bell pepper, baby corn, celery, onions, mushrooms and sliced carrots.",
+		"options": ["chicken", "beef", "pork" ],
+		"category": "Entrees"
+	},
+	{
+		"id": 18,
+		"item": "Seafood Basil",
+		"price": 1175,
+		"description": "Shrimp, scallops and squid sauteed with onion, bell peppers and fresh basil.",
+		"category": "Seafood"
+	},
+	{
+		"id": 19,
+		"item": "Roasted Chili Seafood",
+		"price": 1175,
+		"description": "Shrimp, scallops and squid sauteed with apsparagus, carrot, eggplant, mushrooms and zucchini in a roasted chili sauce.",
+		"category": "Seafood"
+	},
+	{
+		"id": 20,
+		"item": "Soft Shell Crab",
+		"price": 1195,
+		"description": "Golden-fried soft shell crab served with green curry sauce, asparagus, carrots, bell peppers, bamboo shoots, peas and fresh basil.",
+		"category": "Seafood"
+	},
+	{
+		"id": 21,
+		"item": "Shrimp with Yellow Curry Sauce",
+		"price": 1195,
+		"description": "Large Shrimp stir-fried with potato, carrots, onions and pineapple in a Thai yellow curry sauce.",
+		"category": "Seafood"
+	},
+	{
+		"id": 22,
+		"item": "Green Curry",
+		"price": 975,
+		"description": "Choice of chicken, beef or pork sauteed in coconut milk with bell peppers, sweet basil, bamboo shoots and zucchini.",
+		"options": ["chicken", "beef", "pork" ],
+		"category": "Curry"
+	},
+	{
+		"id": 23,
+		"item": "Panang Curry",
+		"price": 975,
+		"description": "Choice of chicken, beef or pork sauteed in coconut milk with green peas, carrots, broccoli, sweet basil and bell peppers.",
+		"options": ["chicken", "beef", "pork" ],
+		"category": "Curry"
+	},
+	{
+		"id": 24,
+		"item": "Massaman Curry",
+		"price": 975,
+		"description": "Choice of chicken, beef or pork sauteed in coconut milk with potatoes, cashew nuts, onions and pineapple.",
+		"options": ["chicken", "beef", "pork" ],
+		"category": "Curry"
+	},
+	{
+		"id": 25,
+		"item": "White Rice (cup)",
+		"price": 100,
+		"category": "Sides"
+	},
+	{
+		"id": 26,
+		"item": "White Rice (bowl)",
+		"price": 300,
+		"category": "Sides"
+	},
+	{
+		"id": 27,
+		"item": "Brown Rice (cup)",
+		"price": 100,
+		"category": "Sides"
+	},
+	{
+		"id": 28,
+		"item": "Brown Rice (bowl)",
+		"price": 300,
+		"category": "Sides"
+	},
+	{
+		"id": 29,
+		"item": "Extra Tofu",
+		"price": 200,
+		"category": "Sides"
+	},
+	{
+		"id": 30,
+		"item": "Extra Peanut Sauce",
+		"price": 100,
+		"category": "Sides"
+	},
+	{
+		"id": 100,
+		"item": "Singha",
+		"price": 375,
+		"ageVerify": 1,
+		"description": "Singha beer don't ask no questions; Singha beer don't tell no lies.",
+		"category": "Beverages"
+	},
+	{
+		"id": 101,
+		"item": "Chang",
+		"price": 350,
+		"ageVerify": 1,
+		"description": "ThaiBev brews Beer Chang, a pale lager. Chang, the Thai word for elephant, an animal with cultural and historical significance in Thailand.",
+		"category": "Beverages"
+	},
+	{
+		"id": 102,
+		"item": "Tiger",
+		"price": 425,
+		"ageVerify": 1,
+		"description": "Launched in 1932, Tiger beer became Singapore's first locally brewed beer.",
+		"category": "Beverages"
+	}
+]

@@ -1,0 +1,35 @@
+﻿<section class="menuItem {{#if selected}}menuItemSelected {{#if ageVerify}}menuItemAdult{{/if}}{{/if}}">
+	<h3 class="menuItemTitle">
+		{{item}}
+	</h3>
+	<p class="menuItemDescription">
+		{{description}}
+		{{#if selected}}
+			{{#if ageVerify}}
+			<br/>
+			<b>Make sure you were born on or before {{dateValid}}.  We will!</b>
+			{{/if}}
+		{{/if}}
+	</p>
+	<h4 class="menuItemPrice">
+		{{#if selected}}
+		{{selected}}
+		{{else}}
+		<span>None</span>
+		{{/if}}
+		<span> @ </span> ${{formatCurrency convertedPrice}}
+	</h4>
+	<aside class="menuItemButtons">
+		{{#if options}}
+		<select data-role="dropdownlist" id="options_{{id}}">
+			{{#each options}}<option value="{{this}}">{{this}}</option>{{/each}}
+		</select>
+		{{/if}}
+
+		{{#unless selected}}
+		<button class="addButton" data-id="{{id}}">I can haz one</button>
+		{{else}}
+		<button class="addButton" data-id="{{id}}">I can haz another</button>
+		{{/unless}}
+	</aside>
+</section>

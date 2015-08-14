@@ -1,0 +1,10 @@
+﻿<section class="menu-category" ng-show="{{categoryLevelBreak()}}">
+	<h2>{{item.category}}</h2>
+</section>
+<section class="menu-item">
+	<h3>{{item.item}}<span class="float-right">{{item.price | currency}}</span></h3>
+	<p>{{item.description}}</p>
+	<div>
+		<select class="form-control" style="width: 16em;" ng-show="item.options" ng-model="option" ng-options="option for option in item.options"></select>
+		<button class="btn btn-xs" ng-disabled="canAddItem()" ng-click="addToOrder($event)"><i class="glyphicon glyphicon-plus"></i>Add</button></div>
+</section>

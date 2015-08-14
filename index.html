@@ -1,0 +1,177 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta charset="utf-8" />
+		<title>A RequireJS Menu Application</title>
+
+		<!-- Get Bootstrap styles and theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+		<!-- Get the Telerik Kendo UI CSS for the Boostrap theme -->
+		<link rel="stylesheet" href="http://cdn.kendostatic.com/2014.1.318/styles/kendo.common.min.css">
+		<link rel="stylesheet" href="http://cdn.kendostatic.com/2014.1.318/styles/kendo.bootstrap.min.css">
+	</head>
+	<body>
+		<script id="menu-item-template" type="text/x-handlebars-dynamic-template" data-href="templates/menu-item.html">
+		</script>
+
+		<script id="order-item-template" type="text/x-handlebars-dynamic-template" data-partial="orderItem">
+		</script>
+
+		<script id="order-template" type="text/x-handlebars-dynamic-template">
+		</script>
+
+		<header class="container">
+			<nav class="navbar navbar-default navbar-fixed-top">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="index.html">Sweet Thai, a restaurant</a>
+					</div>
+					<div id="navbar" class="navbar-collapse collapse">
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="index.html">Home</a></li>
+							<li><a href="#about">About</a></li>
+							<li><a href="#contact">Contact</a></li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="index.html">A Way</a></li>
+									<li><a href="legacy.html">Legacy Way</a></li>
+									<li><a href="require.html">Require JS Way</a></li>
+									<li><a href="angular.html">Angular JS Way</a></li>
+									<li><a href="knockout.html">Knockout JS Way</a></li>
+									<li role="separator" class="divider"></li>
+									<li class="dropdown-header">Nav header</li>
+									<li><a href="sumo.html">Do Sumo Paint</a></li>
+									<li><a href="#">Separated link</a></li>
+									<li><a href="#">One more separated link</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<main class="container has-fixed-top">
+			<div class="row">
+				<div class="col-md-8 does-scroll">
+					<ul id="menu">
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<div id="order" class="content order">
+						<div id="order-total">
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer>
+			<p class="text-muted">&copy; 2015 by John Halland Thompson</p>
+		</footer>
+
+		<style type="text/css" scoped="scoped">
+			footer
+			{
+				border-top: 1px solid #e7e7e7;
+				bottom: 0px;
+				height: 32px;
+				padding-left: 8px;
+				padding-right: 8px;
+				position: absolute;
+				width: 100%;
+			}
+			.webdings
+			{
+				font-family: Webdings;
+				font-size: large;
+			}
+			.wingdings
+			{
+				font-family: Wingdings;
+				font-size: large;
+			}
+			.has-fixed-top
+			{
+				padding-top: 60px;
+			}
+			.menuItem 
+			{
+				box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+				margin: 4px 4px 4px 4px;
+				padding: 8px 10px 8px 10px;
+			}
+			.menuItemSelected
+			{
+				background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPgo8cmVjdCBmaWxsPSIjZmZmIiB3aWR0aD0iNSIgaGVpZ2h0PSI1IiAvPgo8cmVjdCBmaWxsPSIjY2NjIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiAvPgo8L3N2Zz4=");
+				border-left: 1px groove red;
+				box-shadow: 7px 7px 7px 1px rgba(0,0,0,0.80);
+				margin: 6px 6px 6px 6px;
+				padding: 8px 10px 8px 10px;
+			}
+			.menuItemAdult
+			{
+				background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPgo8cmVjdCBmaWxsPSIjZmZlZmVmIiB3aWR0aD0iNSIgaGVpZ2h0PSI1IiAvPgo8cmVjdCBmaWxsPSIjZmZiYmJiIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiAvPgo8L3N2Zz4=");
+			}
+			.menuItemTitle
+			{
+				font-style: oblique;
+			}
+			.menuItemDescription
+			{
+				margin-left: 4em;
+			}
+			.menuItemButtons
+			{
+				font-size: small;
+				margin-left: 4em;
+			}
+			.menuItemPrice
+			{
+				float: right;
+			}
+
+			#menu li
+			{
+				list-style: none;
+			}
+
+			.float-left
+			{
+				float: left;
+			}
+			.float-right
+			{
+				float: right;
+			}
+			.align-center
+			{
+				text-align: center;
+			}
+			.align-right
+			{
+				text-align: right;
+			}
+			.order-details
+			{
+				width: 100%;
+			}
+			.row-divider
+			{
+				border-top: 1px solid black;
+			}
+		</style>
+
+		<script type="text/javascript" src="scripts/lib/require.js" data-main="scripts/start"></script>
+	</body>
+</html>
